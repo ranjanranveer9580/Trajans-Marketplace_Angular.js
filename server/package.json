@@ -4,7 +4,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "babel": {
     "presets": [
@@ -19,7 +21,7 @@
     "aws-sdk": "^2.2.23",
     "axios": "^0.21.3",
     "bitcoin": "^2.2.0",
-    "bitcore": "^1.0.0",
+    "bitcore": "^4.1.0",
     "bitcore-explorers": "^1.0.0",
     "bitpos-node": "^1.0.7",
     "bluebird": "^3.4.7",
@@ -43,7 +45,7 @@
     "git-rev-sync": "^3.0.2",
     "glob": "~5.0.15",
     "google-places": "0.0.2",
-    "helmet": "~3.8.2",
+    "helmet": "~3.21.1",
     "lodash": "^4.17.4",
     "mandrill-api": "^1.0.45",
     "method-override": "~2.3.10",
@@ -71,12 +73,14 @@
     "temp": "^0.8.3",
     "winston": "^2.3.0",
     "xml2js": "^0.4.17",
-    "zip-folder": "~1.0.0"
+    "zip-folder": "~1.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "tslint": "^4.3.1",
     "typescript": "^2.1.5"
-  }
+  },
+  "snyk": true
 }
