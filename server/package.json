@@ -19,7 +19,7 @@
     "aws-sdk": "^2.2.23",
     "axios": "^0.21.3",
     "bitcoin": "^2.2.0",
-    "bitcore": "^1.0.0",
+    "bitcore": "^4.1.0",
     "bitcore-explorers": "^1.0.0",
     "bitpos-node": "^1.0.7",
     "bluebird": "^3.4.7",
